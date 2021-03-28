@@ -8,6 +8,6 @@ WORKDIR /gameserver
 RUN chown gameserver:gameserver /gameserver
 USER gameserver
 COPY --chown=gameserver . .
-RUN chmod +x update.sh && \
+RUN chmod +x update.sh start_server.sh && \
     wget http://media.steampowered.com/client/steamcmd_linux.tar.gz && \
     tar zxf steamcmd_linux.tar.gz
