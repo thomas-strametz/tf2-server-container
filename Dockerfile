@@ -10,4 +10,4 @@ USER gameserver
 COPY --chown=gameserver . .
 RUN wget http://media.steampowered.com/client/steamcmd_linux.tar.gz && \
     tar zxf steamcmd_linux.tar.gz && \
-	./update.sh
+    ./update.sh
