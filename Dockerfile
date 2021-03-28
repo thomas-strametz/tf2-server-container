@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:10.6
 USER root
 RUN dpkg --add-architecture i386 && \
     apt update && \
